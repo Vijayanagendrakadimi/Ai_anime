@@ -1,6 +1,7 @@
 # Ai_anime
 
  Technologies Stack Suggestion
+ ---
 Component	Tech Suggestion
 Backend---------------------->	FastAPI / Node.js
 Frontend--------------------->	React / Flutter
@@ -9,7 +10,9 @@ Vector DB---------------------->	Chroma, FAISS, Pinecone
 Regular DB---------------------->	MongoDB or PostgreSQL
 Hosting------------------------->	AWS, GCP, Azure
 Avatar Generation---------------->	Stable Diffusion, DALL-E
+
 Memory Embedding----------------->	SentenceTransformers, OpenAI Embeddings
+
 ---------------------------------------------------------------------------
 
 
@@ -21,6 +24,7 @@ Embed conversations.
 Embed facts (e.g., "User's location", "User's birthday").
 Optional: Emotion Fine-Tuning:
 Train on datasets of emotional dialogue if you want the bot to be emotionally smart.
+
 ----------------------------------------------------------------------------------------
 
 
@@ -38,6 +42,7 @@ Memory Retrieval
 Context Window (current conversation)
 
 Bonus: Add emotional tone detection (happy, sad) if you want more realism.
+
 -----------------------------------------------------------------------------
 
  Memory Storage
@@ -51,6 +56,7 @@ Data to Store:
 Conversations
 
 User-shared facts (locations, favorites, important events)
+
 -------------------------------------------------------------
 
 Chat Engine (LLM + Memory Layer)
@@ -74,6 +80,7 @@ Use Retrieval-Augmented Generation (RAG):
 Fetch past memories or facts when needed.
 
 Example: If you earlier said "I live in Tokyo", it can recall it when you ask "Where do I live?"
+
 -----------------------------------------------------------------------------------------------------
 
 
@@ -94,6 +101,7 @@ Database Options:
 MongoDB (good for flexible JSON-like documents)
 
 PostgreSQL (if you want structured data)
+
 ---------------------------------------------------------------------
 
  Character Creation Module
@@ -121,6 +129,7 @@ Optional:
 Add trait sliders (Introvert/Extrovert etc.)
 
 AI Avatar: Generate or upload a character image.
+
 ---------------------------------------------------
 
 
