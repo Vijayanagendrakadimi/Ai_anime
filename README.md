@@ -3,12 +3,19 @@
  Technologies Stack Suggestion
  ---
 Component	Tech Suggestion
+
 Backend---------------------->	FastAPI / Node.js
+
 Frontend--------------------->	React / Flutter
+
 LLM--------------------------->	OpenAI GPT-4, Llama-3, or fine-tuned Mistral
+
 Vector DB---------------------->	Chroma, FAISS, Pinecone
+
 Regular DB---------------------->	MongoDB or PostgreSQL
+
 Hosting------------------------->	AWS, GCP, Azure
+
 Avatar Generation---------------->	Stable Diffusion, DALL-E
 
 Memory Embedding----------------->	SentenceTransformers, OpenAI Embeddings
@@ -19,10 +26,15 @@ Memory Embedding----------------->	SentenceTransformers, OpenAI Embeddings
 Training / Fine-Tuning
 --
 Fine-tune a small LLM (if you want full control) with custom conversations for friendly tone.
+
 Train a RAG system:
+
 Embed conversations.
+
 Embed facts (e.g., "User's location", "User's birthday").
+
 Optional: Emotion Fine-Tuning:
+
 Train on datasets of emotional dialogue if you want the bot to be emotionally smart.
 
 ----------------------------------------------------------------------------------------
