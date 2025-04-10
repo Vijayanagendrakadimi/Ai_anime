@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Avatar Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Avatar Generator</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="upload">Upload Image</button>
+            <button class="tab-btn" data-tab="prompt">Text Prompt</button>
+            <button class="tab-btn" data-tab="camera">Camera</button>
+        </div>
+        
+        <div class="tab-content active" id="upload-tab">
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="file-upload">Choose an image:</label>
+                    <input type="file" id="file-upload" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="upload-prompt">Prompt (optional):</label>
+                    <input type="text" id="upload-prompt" placeholder="Describe how you want the image modified">
+                </div>
+                <button type="submit">Generate Avatar</button>
+            </form>
+            <div class="result" id="upload-result"></div>
+        </div>
+        
+        <div class="tab-content" id="prompt-tab">
+            <form id="prompt-form">
+                <div class="form-group">
+                    <label for="text-prompt">Describe your avatar:</label>
+                    <textarea id="text-prompt" required placeholder="A futuristic cyberpunk avatar with neon lights..."></textarea>
+                </div>
+                <button type="submit">Generate Avatar</button>
+            </form>
+            <div class="result" id="prompt-result"></div>
+        </div>
+        
+        <div class="tab-content" id="camera-tab">
+            <form id="camera-form">
+                <div class="camera-preview">
+                    <video id="camera-view" autoplay playsinline></video>
+                    <button type="button" id="capture-btn">Capture</button>
+                    <canvas id="camera-canvas" style="display: none;"></canvas>
+                </div>
+                <div class="form-group">
+                    <label for="camera-prompt">Prompt (optional):</label>
+                    <input type="text" id="camera-prompt" placeholder="Describe how you want the image modified">
+                </div>
+                <button type="submit">Generate Avatar</button>
+            </form>
+            <div class="result" id="camera-result"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

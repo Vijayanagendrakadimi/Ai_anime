@@ -1,0 +1,8 @@
+{
+  "maven.terminal.customEnv": [
+    {
+      "environmentVariable": "STABILITY_API_KEY",
+      "value": "sk-guxpbv7jNRZVvnMZu3eE5IillKYqD8mrV9oZZXsD75RTlWd3"
+    }
+  ]
+}
